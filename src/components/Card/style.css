@@ -1,0 +1,75 @@
+.card {
+    position: relative;
+    margin-left: clamp(16px, -136.8169px + 40.7512vw, 450px);
+    margin-right: clamp(16px, -136.8169px + 40.7512vw, 450px);
+    padding-right: clamp(24px, 15.5493px + 2.2535vw, 48px);
+    padding-left: clamp(24px, 15.5493px + 2.2535vw, 48px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: clamp(10px, 8.2394px + 0.4695vw, 15px);
+    background-color: hsl(217, 19%, 24%);
+}
+
+.card__number {
+    padding-top: clamp(40px, 37.1831px + 0.7512vw, 48px);
+    text-transform: uppercase;
+    font-size: clamp(0.6875rem, 0.6518rem + 0.1786vw, 0.8125rem);
+    letter-spacing: clamp(0.21625rem, 0.205rem + 0.0562vw, 0.255625rem);
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+}
+
+.card__text {
+    padding-top: 24px;
+    color: hsl(193, 38%, 86%);
+    font-size: clamp(1.5rem, 1.4286rem + 0.3571vw, 1.75rem);
+    letter-spacing: clamp(-0.01625rem, -0.0155rem + -0.0036vw, -0.01875rem);
+    text-align: center;
+}
+
+.card_decor {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: clamp(24px, 18.3662px + 1.5023vw, 40px);
+    margin-bottom: clamp(64px, 61.1831px + 0.7512vw, 72px);
+}
+
+.card_decor-divider {
+    width: clamp(122px, 95.9437px + 6.9484vw, 196px);
+    height: 1px;
+    background-color: hsl(217, 19%, 38%);
+}
+
+.card_decor-pause {
+    display: flex;
+    gap: 8px;
+}
+
+.card_decor-rectangle {
+    width: 6px;
+    height: 16px;
+    background-color: hsl(193, 38%, 86%);
+    border-radius: 3px;
+}
+
+.card__button {
+    position: absolute;
+    bottom: -32px;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 64px;
+    block-size: 64px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+}
+
+.card__button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 40px #53FFAA;
+}
