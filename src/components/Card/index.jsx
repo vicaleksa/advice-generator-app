@@ -8,7 +8,7 @@ function Card() {
 
     useEffect(() => {
         setLoading(true);
-        fetch('https://api.adviceslip.com/advice')
+        fetch('https://api.adviceslip.com/advice', {cache: "no-cache"})
             .then((response) => response.json())
             .then((data) => {
                 setLoading(false);
@@ -25,7 +25,7 @@ function Card() {
             return;
         }
         setLoading(true);
-        fetch('https://api.adviceslip.com/advice')
+        fetch('https://api.adviceslip.com/advice', {cache: "no-cache"})
             .then((response) => response.json())
             .then((data) => {
                 setLoading(false);
