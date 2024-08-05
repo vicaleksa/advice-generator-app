@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './style.css';
+import styles from './style.module.css';
 import IconButton from '/src/svg/icon-dice.svg';
 
 function Card() {
@@ -38,24 +38,24 @@ function Card() {
     }
 
     return (
-        <div className="card">
+        <div className={styles.card}>
             <blockquote>
-                <p className="card__number">
+                <p className={styles.card__number}>
                     Advice #{quotes && quotes["slip"]["id"]}
                 </p>
-                {quotes && (<p className="card__text">{quotes["slip"]["advice"]}</p>)}
+                {quotes && (<p className={styles.card__text}>{quotes["slip"]["advice"]}</p>)}
             </blockquote>
-            <div className='card_decor'>
-                <div className='card_decor-divider'></div>
-                <div className='card_decor-pause'>
-                    <div className='card_decor-rectangle'></div>
-                    <div className='card_decor-rectangle'></div>
+            <div className={styles.card_decor}>
+                <div className={styles.divider}></div>
+                <div className={styles.pause}>
+                    <div className={styles.rectangle}></div>
+                    <div className={styles.rectangle}></div>
                 </div>
-                <div className='card_decor-divider'></div>
+                <div className={styles.divider}></div>
             </div>
-            <button className="card__button" type='button' onClick={handleClick}>
+            <button className={styles.card__button} type='button' onClick={handleClick}>
                 <img
-                    className="card__button-icon"
+                    className={styles.icon}
                     src={IconButton}
                     alt="Icon Button"
                 />

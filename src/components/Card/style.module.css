@@ -37,18 +37,18 @@
     margin-bottom: clamp(64px, 61.1831px + 0.7512vw, 72px);
 }
 
-.card_decor-divider {
+.divider {
     width: clamp(122px, 95.9437px + 6.9484vw, 196px);
     height: 1px;
     background-color: hsl(217, 19%, 38%);
 }
 
-.card_decor-pause {
+.pause {
     display: flex;
     gap: 8px;
 }
 
-.card_decor-rectangle {
+.rectangle {
     width: 6px;
     height: 16px;
     background-color: hsl(193, 38%, 86%);
